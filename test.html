@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <h2>Ou mettre le JavaScript</h2>
+    <script>
+        window.document.write("Bonjour Monde <br>");
+        document.write("Dans le body ou dans le head aec une balise 'script' <br>");
+        document.write("Dans le head avec une balise 'script' avec un fichier <br>");
+        document.write("Dans un lien avec le protocole javascript <br>");
+        document.write("Dans une balise avec un gestionnaire d'évènement <br>");
+        function changer() {
+            //document.images[1].src = "image/fleur.webp";
+            document.foot.src = "image/sonic.webp";
+        }
+        function re() {
+            //document.images[1].src = "image/foot.webp";
+            document.foot.src = "image/foot.webp";
+        }
+    </script>
+    <a href="javascript:alert('Coucou')">Cliquez ici</a><br>
+    <a href="#" onclick="alert('Coucou ma salope');">La salope</a><br><br>
+
+    <img src="img/fleur.webp" widht="200" height="200" alt="fleur">
+    <img src="img/foot.webp" widht="200" height="200" alt="foot" onmouseover="changer();" onmouseleave="re();" id="foot"/>
+
+    <script>
+        function changer() {
+        document.images[1].src = "img/sonic.webp";
+        //document.foot.src = "img/sonic.webp";
+        //document.getElementById("foot").src = "img/foot.webp"
+
+     }
+        function re() {
+        document.images[1].src = "img/foot.webp";
+        //document.foot.src = "img/foot.webp";
+        //document.getElementById("foot").src = "img/foot.webp"
+        }
+    </script>
+
+</body>
+</html>
